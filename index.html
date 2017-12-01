@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Jonathan's Super Webiste!</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+  <body style="width: 100%;">
+
+    <nav id = "navMenu">
+    </nav>
+  <script src="./js/navMenu.js" type="text/javascript"></script>
+  
+ <div style = "margin-top: 3em;">
+    <h1>Welcome person to Jonathan's super website! (V.2.6)</h1>
+  <p class = "type1">Hello there! This is the first paragraph. I am a 6th form student who attends Parmiter's 6th form <a href="http://www.parmiters.herts.sch.uk/home/">Click here to visit me school's webiste!</a></p>
+  <p class = "type1">This is the second paragraph. I am looking to do computer science at uni, and am in the middle of making my application. Below you can see a picture of one of the Hundred Islands in the Phillipines, I went there during my Summer Holiday <br> You can click <a href="/holiday">here</a> to see more pictures!</p>
+ </div>
+ <div style = "background-color: lightblue; width: 30em; border: solid black;">
+	<img id = "image1" src="./res/DSC_0857.jpg" alt="Oh No! Where has my picture gone!" width = "100%">
+	<p id = "image1desc" style = 'overflow: hidden; font-size: 150%; text-align: center; font-family: "Trebuchet MS", Helvetica, sans-serif; height: 10%;'>This picture blah blah blah
+	</p>
+  </div>
+    <p class = "type1">Yo ho ho! If you are a member of the hood or are looking to join the hood, then please click <a href="/hood">here</a></p>
+
+    <iframe src="https://drive.google.com/file/d/0BxNgUeaVWZXTbWs1TnVIQXBHV28/preview" width="640" height="480"></iframe>
+
+	<script>
+		var counter = 0;
+		var images = 	[["DSC_0228.jpg", "This is a picture with the farm behind us, there is a lot of rice growing!"],
+						["DSC_0857.jpg", "Woah! This is one of the hundred islands! I couldn't count them all!"],
+						["DSC_0679.jpg", "Many of my cousins doing the dab. So much swag!"],
+						["DSC_0945.jpg", "This is the cave I sleep in! Ha Ha! Kidding!"],
+						["DSC_1011.jpg", "Staying up late with some of the cousins! We don't know how to sleep!"],
+						["DSC_0404.jpg", "Bahahaha! Look at that weirdo posing!"]]
+		changePicture()
+		setInterval(changePicture, 4000);
+
+		function changePicture()
+		{
+			document.getElementById("image1").src = "./res/" + images[counter%images.length][0];
+			document.getElementById("image1desc").innerHTML = images[counter%images.length][1];
+			counter ++;
+
+			/*
+			if (x == true)
+			{
+				document.getElementById("image1").src = "./res/DSC_0228.jpg";
+				x = false;
+			}
+			else
+			{
+				document.getElementById("image1").src = "./res/DSC_0857.jpg";
+				x = true;
+			}
+			*/
+		}
+
+
+	</script>
+
+
+  </body>
+</html>

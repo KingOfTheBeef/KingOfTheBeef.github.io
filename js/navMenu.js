@@ -1,0 +1,7 @@
+document.getElementById("navMenu").innerHTML = "<ul>" +
+												"<li><a href='./index.html'>Home</a></li>" +
+												"<li><a href='./holiday.html'>Holiday</a></li>" +
+												"<li><a href='./hood.html'>Hood</a></li>" +
+												"<li><a href='./events.html'>Events</a></li>" +
+												"<li><a href='./battleroyale.html'>Battle Royale Blog</a></li>" +
+												"</ul>";
