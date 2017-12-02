@@ -39,10 +39,24 @@
 		
 		var images = []
 		
+		/*
 		for (x = 0; x < imagedata.length; x++)
 		{
 		images[x] = new Image();
 		images[x].src = "https://drive.google.com/uc?id=" + imagedata[x][0];
+		}
+		*/
+		preload(0)
+		function preload(index) {
+        index = index || 0;
+        if (imagedata && imagedata.length > index) {
+            var img = new Image ();
+            img.onload = function() {
+                preload(index + 1);
+            }
+            img.src = "https://drive.google.com/uc?id=" + imagedata[index][0];
+			images.push(img);
+			}
 		}
 	
 	function picLeft()
