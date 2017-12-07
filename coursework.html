@@ -18,55 +18,21 @@
 	<li>Rota Viewer</li>
 	<li>Finance Payroll Generator</li>
 	</ul>
-	
-	<div width = "100%", height = "30em", style = "overflow: hidden;">
-	<h2 style = "width: 100%; font-family: 'Helectivia', 'Arial', 'Sans-Serif';">Game Controls</h2>
-	<table class = "type1" style = "float: left;">
-		<tr>
-			<th>Action Performed</th>
-			<th>Blue Ninja Control</th>
-			<th>Black Ninja Control</th>
-		</tr>
-		<tr>
-			<td>Jump</td>
-			<td>Up Key</td>
-			<td>W Key</td>
-		</tr>
-		<tr>
-			<td>Left/Right</td>
-			<td>Left/Right Key</td>
-			<td>A/D Key</td>
-		</tr>
-		<tr>
-			<td>Attack</td>
-			<td>Enter Key</td>
-			<td>Q Key</td>
-		</tr>
-		<tr>
-			<td>Ultimate move!</td>
-			<td>Hold right shfit</td>
-			<td>E Key</td>
-		</tr>
-		<tr>
-			<td>Pause</td>
-			<td>P Key</td>
-			<td>E Key</td>
-		</tr>		
-	</table>
-
-	<a style = "float: right; width: 20em;" href="https://drive.google.com/open?id=1H6AuZIvO3K4MManBbNC1AYyC6NJ4-hNf"><img src = "http://www.photosinbox.com/download/green-round-download-button.jpg" width = "100%"></img></a>
-	
+	  
+	<div style="background-color: lightblue;">
+		<h2>Database</h2>
+		<p>The database is a foundational feature of the system. It is necessary as it stores all the data that the other components need access to in order to operate correctly.<br>For example, the rota creator uses the database to produce a list of all the clients and carers so that the user can easily create their rotas by having access to a list of all clients and carers. The database also stores values such as position and wage which is used in the finance feature to calculate the amounts that are due to each carer.<br>Additional features of the database include the ability to add and remove clients and carers, as well as the ability to scroll through the table, which avoids cluttering the screen with too many record entries.</p>
+		<img width="50%" src="./res/database.png">
 	</div>
-	
-	<p class = "type1">If you would like to play the game, then you can download it <a href = "https://drive.google.com/open?id=1H6AuZIvO3K4MManBbNC1AYyC6NJ4-hNf">here!</a> I promise it is not a virus!</p>
-	
-	
-	<p class = "type1">This game was developed in C++ using the SDL2 library (inlcuding SDL_Image)</p>
-	
-	<div id="event1" style="background-color: lightblue;">
-		<h2>Dev update 1</h2>
-		<p>I'll put some updates and some pictures here probably!</p>
-		<img width="50%" src="./res/battleroyale.png">
+	<div style="background-color: lightblue;">
+		<h2>Rotamaker</h2>
+		<p>During my work at the care agency, I found that designing and creating rotas was incredibly difficult and tedious. The rota had to serve all the clients that required care but also had to give each carer enough hours to work so that they could get paid enough. This meant juggling all the schedules of the different carers and would cause issues when a carer was taking the day off or when a new carer was hired. It was also difficult as you had to know all the carers and clients and had to make sure that you never assigned a carer to be in two places at once, or that they had enough time to travel between clients.<br>The main focus behind the rota generator is to provide a utility which helps to ease and make the process of creating the rota more robust, efficient and effective.</p>
+		<img width="50%" src="./res/rotamaker.png">
+	</div>
+	<div style="background-color: lightblue;">
+		<h2>Finance</h2>
+		<p>The last feature to showcase is the finance payroll generator. This is a simple tool that can be used to mass produce that payroll data using the hourly wage of a carer, and the number of hours they work in a particular rota. The tool is used to quickly produce the payroll which can then be forwarded to a chartered accountant who can then use the data to complete remuneration. This helps as it speeds up the process, as instead of having to calculate the amounts due by hand, it can be done all on the computer. A computer also doesn't make mistakes (as long as my code works as I think it does haha) so it is also more secure and robust.</p>
+		<img width="50%" src="./res/finance.png">
 	</div>
   </body>
 </html>
